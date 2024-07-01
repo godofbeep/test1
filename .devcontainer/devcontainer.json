@@ -1,0 +1,15 @@
+{
+    "name": "Solana Development Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "extensions": [
+        "rust-lang.rust-analyzer",
+        "esbenp.prettier-vscode"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "npm install && rustup default stable",
+    "remoteUser": "vscode"
+}
